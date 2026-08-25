@@ -1,7 +1,7 @@
 # 🐍 University of Helsinki - Python Programming MOOC 2026
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Progress-Part_7_Complete-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Progress-Part_8_Complete-brightgreen?style=for-the-badge)
 
 This repository contains my solutions and coursework for the **Python Programming MOOC 2026** offered by the University of Helsinki.  
 The course covers foundational to advanced Python concepts, focusing on clean code, algorithm design, data structures, and modular software design.
