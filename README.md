@@ -17,7 +17,7 @@ The course covers foundational to advanced Python concepts, focusing on clean co
 - [x] **Part 5**: Tuples, references, multi-dimensional lists, and dictionaries
 - [x] **Part 6**: File I/O operations and exception handling (`try`/`except`)
 - [x] **Part 7**: Python Standard Library (`random`, `datetime`), custom modules *(Completed)*
-- [ ] **Part 8**: Object-Oriented Programming (OOP) & Class Syntax
+- [x] **Part 8**: Object-Oriented Programming (OOP) & Class Syntax
 - [ ] **Part 9**: Class Inheritance, Encapsulation, and Polymorphism
 - [ ] **Part 10**: Advanced OOP & Software Design
 - [ ] **Part 11**: List Comprehensions & Recursion
