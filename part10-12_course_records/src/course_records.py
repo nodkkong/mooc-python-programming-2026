@@ -18,7 +18,6 @@ class Course:
         if grade > self.__grade:
             self.__grade = grade
 
-
 class CourseRecords:
     def __init__(self):
         self.__courses = {}
@@ -26,8 +25,7 @@ class CourseRecords:
     def add_course(self, name: str, grade: int, credits: int):
         if name not in self.__courses:
             self.__courses[name] = Course(name, grade, credits)
-        else:
-            self.__courses[name].set_grade(grade)
+        self.__courses[name].set_grade(grade)
 
     def get_course(self, name: str):
         if name not in self.__courses:
@@ -65,8 +63,8 @@ class CourseRecordsApplication:
     def stat(self):
         courses = self.__courserecords.all_courses()
         total_courses = len(courses)
-        total_credits = sum(course.credits() for course in courses.values())
         total_grade = sum(course.grade() for course in courses.values())
+        total_credits = sum(course.credits() for course in courses.values())
         mean_grade = total_grade / total_courses
 
         print(f"{total_courses} completed courses, a total of {total_credits} credits")
@@ -86,27 +84,28 @@ class CourseRecordsApplication:
                 g2 += 1
             elif grade == 1:
                 g1 += 1
-        print(f"5: {'x'*g5}")
-        print(f"4: {'x'*g4}")
-        print(f"3: {'x'*g3}")
-        print(f"2: {'x'*g2}")
-        print(f"1: {'x'*g1}")
+        print(f"5: {g5 * 'x'}")
+        print(f"4: {g4 * 'x'}")
+        print(f"3: {g3 * 'x'}")
+        print(f"2: {g2 * 'x'}")
+        print(f"1: {g1 * 'x'}")
 
     def execute(self):
         self.help()
         while True:
             print("")
-            command = input("command: ")
-            if command == "0":
+            command = int(input("command: "))
+            if command == 0:
                 break
-            elif command == "1":
+            elif command == 1:
                 self.add_course()
-            elif command == "2":
+            elif command == 2:
                 self.search()
-            elif command == "3":
+            elif command == 3:
                 self.stat()
             else:
                 self.help()
+        
 
 
 application = CourseRecordsApplication()
